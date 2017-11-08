@@ -37,7 +37,7 @@
     <p class="login-box-msg">Sign in to start your session</p>
 
 <!--peringatan -->
-    <form action="<?php echo base_url('m_login'); ?>" method="post">
+    <form action="<?php echo base_url('login/m_login'); ?>" method="post">
         <?php
         if (validation_errors() || $this->session->flashdata('result_login')) {
       ?>
