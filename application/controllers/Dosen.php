@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class dosen extends CI_Controller {
+class Dosen extends CI_Controller {
 
 	public function __construct(){
 	parent::__construct();
-	$this->load->Model('dosenModel');
+	$this->load->Model('DosenModel');
 }
 
 public function validation(){
@@ -23,13 +23,13 @@ public function bimbingan(){
 	$this->validation();
 	$session = $this->session->userdata('login');
 	$dosen = $session['id_member'];
-	$data['list_mhs'] = $this->dosenModel->get_all_where2('judul','id_dosen',$dosen,'stus','2');
+	$data['list_mhs'] = $this->DosenModel->get_all_where2('judul','id_dosen',$dosen,'stus','2');
 	$this->template->render('dosen/list_mahasiswa',$data);
 }
 
 public function berkas($id){
 	$this->validation();
-	$data['berkas'] = $this->dosenModel->get_all_where('pertemuan','id_judul',$id);
+	$data['berkas'] = $this->DosenModel->get_all_where('pertemuan','id_judul',$id);
 	$this->template->render('dosen/berkas',$data);
 }
 
@@ -40,14 +40,14 @@ public function save_pertemuan(){
 	echo $tgl = $this->input->post('tgl');
 	echo $tgl_post = date('Y-m-d');
 	echo $jam_post = date('H:i:s');
-	$this->dosenModel->save_pertemuan($id_judul,$tgl,$summary,$jenis,$tgl_post,$jam_post);
+	$this->DosenModel->save_pertemuan($id_judul,$tgl,$summary,$jenis,$tgl_post,$jam_post);
 	redirect('dosen/reView');
 }
 
 public function reView(){
 	$this->validation();
 	$sesi =($this->session->userdata('id_jud'));
-	$data['log'] = $this->dosenModel->get_all_where('pertemuan','id_judul',$sesi['id_judul']);
+	$data['log'] = $this->DosenModel->get_all_where('pertemuan','id_judul',$sesi['id_judul']);
 	$data['idjudul'] = $sesi['id_judul'];
 	$this->template->render('dosen/bimbingan',$data);
 }
@@ -67,7 +67,7 @@ public function save_komentar(){
 			$jam_post = date('H:i:s');
 			$file = null;
 			$size = null;
-			$this->dosenModel->Upload_file_komentar($id_pertemuan,$komentar,$file,$id_member,$tgl_post,$size);
+			$this->DosenModel->Upload_file_komentar($id_pertemuan,$komentar,$file,$id_member,$tgl_post,$size);
 			redirect('dosen/reView');
 }
 else{
@@ -81,7 +81,7 @@ else{
 		$Upload_data['file_name'];
 		$file = $Upload_data['file_name'];
 		$size = $Upload_data->['file_size'];
-		$this->dosenModel->Upload_file_komentar($id_pertemuan,$komentar,$file,$id_member,$tgl_post,$size);
+		$this->DosenModel->Upload_file_komentar($id_pertemuan,$komentar,$file,$id_member,$tgl_post,$size);
 		redirect('dosen/reView');
 	}		
 }

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-  class loginModel extends CI_Model {
+  class LoginModel extends CI_Model {
 
 public function mahasiswa(){
   echo $username = $this->security->xss_clean($this->input->post('username'));
@@ -18,7 +18,7 @@ public function mahasiswa(){
       'foto' => $row->foto,
       'validated' =>true
       );
-    $this->session->set_userdata("login",$data);
+    $this->session->set_userdata('login',$data);
     return true;
   }
   return false;
@@ -39,7 +39,7 @@ public function dosen(){
       'foto' => $row->foto,
       'validated' =>true
       );
-    $this->session->set_userdata("login",$data);
+    $this->session->set_userdata('login',$data);
     return true;
   }
   return false;
@@ -61,7 +61,7 @@ public function kajur(){
       'foto' => $row->foto,
       'validated' =>true
       );
-    $this->session->set_userdata("login",$data);
+    $this->session->set_userdata('login',$data);
     return true;
   }
   return false;
@@ -83,7 +83,7 @@ public function admin(){
       'foto' => $row->foto,
       'validated' =>true
       );
-    $this->session->set_userdata("login",$data);
+    $this->session->set_userdata('login',$data);
     return true;
   }
   return false;

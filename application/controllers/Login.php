@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class login extends CI_Controller {
+class Login extends CI_Controller {
 
   function __construct() {
     parent::__construct();
@@ -9,7 +9,7 @@ class login extends CI_Controller {
   }
 
   function index() {
-    $this->load->view('login'); //login/model
+    $this->load->view('login');
   }
 
 public function logout(){
@@ -45,8 +45,8 @@ if(! $result){
 
 public function error(){
   $this->session->set_flashdata('result_login', '<br>Username atau Password yang anda masukkan salah.');
-        redirect(base_url('login'));
-  $this->load->view('Login/error');
+        redirect('login');
+  
 }
 
 }
