@@ -30,7 +30,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>SIBIMTA</b>UMY</a>
+    <a href=""><b>SIBIMTA</b>UMY</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
