@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class mahasiswaModel extends CI_Model {
+class MahasiswaModel extends CI_Model {
 	public function __construct(){
 parent::__construct();
 }
@@ -15,7 +15,7 @@ parent::__construct();
 public function get_all_distinct($table,$Field){
 	$this->db->distinct();
 	$this->db->select($Field);
-	$this->db->from('table')
+	$this->db->from($table);
 	$query = $this->db->get();
 }
 
@@ -55,7 +55,7 @@ public function Upload_file_ujian($id_judul,$id_judul,$kategori,$file,$tgl_post)
 
 public function save_judul(){
 	$member = $this->input->post('member');
-	$judul = $this->input->post('judul')
+	$judul = $this->input->post('judul');
 	$diskripsi = $this->input->post('diskripsi');
 	$en_judul = $this->input->post('en_judul');
 	$en_diskripsi = $this->input->post('en_diskripsi');

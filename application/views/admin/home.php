@@ -91,24 +91,6 @@ $this->load->view('admin/template/sidebar');
         </div><!-- ./col -->
     </div><!-- /.row -->
     <!-- Main row -->
-    <div class="row">
-        <!-- Left col -->
-        <section class="col-lg-7 connectedSortable">
-            <!-- Custom tabs (Charts with tabs)-->
-            <div class="nav-tabs-custom">
-                <!-- Tabs within a box -->
-                </div>
-            </div><!-- /.nav-tabs-custom -->
-
-            <!-- Chat box -->
-                 </div>
-            </div>
-            
-        </section><!-- right col -->
-    </div><!-- /.row (main row) -->
-
-</section><!-- /.content -->
-
 
 <?php
 $this->load->view('template/js');
@@ -145,7 +127,3 @@ $this->load->view('template/js');
 
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url('assets/AdminLTE-2.0.5/dist/js/demo.js') ?>" type="text/javascript"></script>
-
-<?php
-$this->load->view('template/foot');
-?>

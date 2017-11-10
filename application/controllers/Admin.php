@@ -5,7 +5,7 @@ class Admin extends CI_Controller {
 
 public function __construct() {
 		parent::__construct();
-		$this->load->Model('adminModel');
+		$this->load->Model('AdminModel');
 		}
 
 public function validation(){
@@ -16,73 +16,73 @@ public function validation(){
 
 public function index(){
 	$this->validation();
-	$this->template->render('admin/home');
+	$this->load->view('admin/dosen/dosen_list');
 }
 
 public function list_mhs(){
 	$this->validation();
-	$data['mahasiswa'] = $this->adminModel->get_all('mahasiswa');
+	$data['mahasiswa'] = $this->AdminModel->get_all('mahasiswa');
 	$this->template->render('admin/mahasiswa/list',$data);
 }
 
 public function edit_mhs($id){
 	$this->validation();
-	$data['jurusan'] = $this->adminModel->get_all('jurusan');
-	$data['edit'] = $this->adminModel->get_all_where('mahasiswa','id_member',$id);
+	$data['jurusan'] = $this->AdminModel->get_all('jurusan');
+	$data['edit'] = $this->AdminModel->get_all_where('mahasiswa','id_member',$id);
 	$this->template->render('admin/mahasiswa/edit',$data);
 }
 
 public function save_mhs(){
 	$this->validation();
-	$this->adminModel->save_mahasiswa();
+	$this->AdminModel->save_mahasiswa();
 	redirect('admin/list_mhs');
 }
 
 public function detail_list(){
 	$this->validation();
-	$data['judul'] = $this->adminModel->get_all_where('judul','status','0');
+	$data['judul'] = $this->AdminModel->get_all_where('judul','status','0');
 	$this->template->render('admin/approval/detail_list', $data);
 }
 
 public function stujui($id){
 	$this->validation();
-	$this->adminModel->stujui($id);
+	$this->AdminModel->stujui($id);
 	redirect('admin/approval');
 }
 
 public function tolak($id){
 	$this->validation();
-	$this->adminModel->tolak($id);
+	$this->AdminModel->tolak($id);
 	redirect('admin/approval');
 }
 
 public function list_cekjudul(){
 	$this->validation();
-	$data['cek_judul'] = $this->adminModel->get_all('cek_judul');
+	$data['cek_judul'] = $this->AdminModel->get_all('cek_judul');
 	$this->template->render('admin/cek_judul/home', $data);
 }
 
 public function edit_cekjudul($id){
 	$this->validation();
-	$data['edit'] = $this->adminModel->get_all_where('cek_judul','id_skripsi',$id);
+	$data['edit'] = $this->AdminModel->get_all_where('cek_judul','id_skripsi',$id);
 	$this->template->render('admin/cek_judul/edit',$data);
  }
 
 public function save_cekjudul(){
 	$this->validation();
-	$this->adminModel->save_cekjudul();
+	$this->AdminModel->save_cekjudul();
 	redirect('admin/list_cekjudul');
 }
 
 public function del_cekjudul($id){
 	$this->validation();
-	$this->adminModel->del_cekjudul($id);
+	$this->AdminModel->del_cekjudul($id);
 	redirect('admin/list_cekjudul');
 }
 
 public function lihat_judul(){
 	$this->validation();
-	$data['cek_judul'] = $this->adminModel->get_all_where('cek_judul','id_skripsi',$id);
+	$data['cek_judul'] = $this->AdminModel->get_all_where('cek_judul','id_skripsi',$id);
 }
 
 public function save_download(){
@@ -102,45 +102,45 @@ public function save_download(){
 			$Upload_data = $this->Upload->data();
 			$Upload_data['file_name'];
 			$file = $Upload_data['file_name'];
-			$this->adminModel->save_download($nama,$tgl_post,$jam_post,$file);
+			$this->AdminModel->save_download($nama,$tgl_post,$jam_post,$file);
 			redirect('admin/list_download');}
 	}
 
 public function del_download($id){
 	$this->validation();
-	$this->adminModel->del_download($id);
+	$this->AdminModel->del_download($id);
 	redirect('admin/list_download');
 }
 
 public function request_ujian(){
 	$this->validation();
-	$data['jadwal'] = $this->adminModel->get_all_where('jadwal','status',0);
-	$data['jadw'] = $this->adminModel->get_all_where('jadwal','status',0);
+	$data['jadwal'] = $this->AdminModel->get_all_where('jadwal','status',0);
+	$data['jadw'] = $this->AdminModel->get_all_where('jadwal','status',0);
 	$this->template->render('admin/request_ujian',$data);
 }
 
 public function proses_jadwal($id){
 	$this->validation();
-	$data['dosen'] = $this->adminModel->get_all('dosen');
-	$data['jadwal'] = $this->adminModel->get_all_where('jadwal','id_jadwal',$id);
+	$data['dosen'] = $this->AdminModel->get_all('dosen');
+	$data['jadwal'] = $this->AdminModel->get_all_where('jadwal','id_jadwal',$id);
 }
 
 public function update_jadwal(){
 	$this->validation();
-	$this->adminModel->update_jadwal();
+	$this->AdminModel->update_jadwal();
 	$this->redirect('admin/request_ujian');
 }
 
 public function kuota(){
 	$this->validation();
-	$data['dosen'] = $this->adminModel->kuota();
+	$data['dosen'] = $this->AdminModel->kuota();
 	$this->template->render('admin/kuota',$data);
 }
 
 public function profile(){
 	$this->validation();
 	$session = $this->session->userdata('login');
-	$data['admin'] = $this->adminModel->get_all_where('admin','id_member', $session['id_member']);
+	$data['admin'] = $this->AdminModel->get_all_where('admin','id_member', $session['id_member']);
 	$this->template->render('admin/profile', $data);
 }
 
@@ -162,7 +162,7 @@ public function do_Upload($gambar){
 
 public function update_pass(){
 	$gambar = $this->do_Upload('gambar');
-	$this->adminModel->simpanProfil($gambar);
+	$this->AdminModel->simpanProfil($gambar);
 	redirect('login/logout');
 	}
 }

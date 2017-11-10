@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class adminModel extends CI_Model {
+class AdminModel extends CI_Model {
 	public function __construct(){
 parent::__construct();
 }
@@ -9,7 +9,7 @@ parent::__construct();
 	public function get_all($table){
 	$this->db->from($table);
 	$query = $this->db->get();
-	$return $query->result();
+	return $query->result();
 }
 
 public function get_all_distinct($table,$Field){

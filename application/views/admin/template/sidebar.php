@@ -5,7 +5,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="<?php echo base_url('assets/AdminLTE-2.0.5/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image" />
+                <img src="<?php echo base_url('assets/AdminLTE-2.4.2/dist/img/user2-160x160.jpg') ?>" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
                 <p>Nama Admin</p>
@@ -19,7 +19,7 @@
                     <i class="fa fa-dashboard"></i> <span>Mahasiswa</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="<?php echo site_url('dashboard1') ?>"><i class="fa fa-circle-o"></i>Daftar Mahasiswa</a></li>
+                    <li><a href="<?php echo site_url('Admin') ?>"><i class="fa fa-circle-o"></i>Daftar Mahasiswa</a></li>
                     <li><a href="<?php echo site_url('input_mahasiswa') ?>"><i class="fa fa-circle-o"></i> Input Mahasiswa</a></li>
                 </ul>
             </li>
