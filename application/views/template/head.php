@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>SIBIMTA | Dashboard</title>
+        <title>AdminLTE 2 | Dashboard</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- Bootstrap 3.3.2 -->
         <link href="<?php echo base_url('assets/AdminLTE-2.4.2/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
