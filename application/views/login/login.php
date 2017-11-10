@@ -28,6 +28,16 @@
             <div class="login-box-body">
                 <p class="login-box-msg">Sign in to start your session</p>
                 <form action="<?php echo site_url('login/m_login') ?>" method="post">
+        <?php
+        if (validation_errors() || $this->session->flashdata('result_login')) { 
+            ?>
+            <div class="alert alert-danger animated fadeInDown" role="alert">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Peringatan!</strong>
+                <?php echo validation_errors(); ?>
+                <?php echo $this->session->flashdata('result_login'); ?>
+            </div>
+      <?php } ?>
                     <div class="form-group has-feedback">
                         <input type="text" class="form-control" placeholder="Email"/>
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

@@ -44,7 +44,7 @@ if(!$result){
 }
 
 public function error(){
-  $this->session->set_flashdata('login', '<br>Username atau Password yang anda masukkan salah.');
+  $this->session->set_flashdata('result_login', '<br>Username atau Password yang anda masukkan salah.');
         redirect('login');
   
 }
