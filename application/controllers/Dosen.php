@@ -71,7 +71,7 @@ public function save_komentar(){
 			redirect('dosen/reView');
 }
 else{
-		$data = array('Upload_data'->$this->Upload->data());
+		$data = array('Upload_data'=>$this->Upload->data());
 		$id_pertemuan = $this->input->post('id_pertemuan');;
 		$komentar = $this->input->post('komentar');
 		$id_member = $session['id_member'];
@@ -80,7 +80,7 @@ else{
 		$Upload_data = $this->Upload->data();
 		$Upload_data['file_name'];
 		$file = $Upload_data['file_name'];
-		$size = $Upload_data->['file_size'];
+		$size = $Upload_data['file_size'];
 		$this->DosenModel->Upload_file_komentar($id_pertemuan,$komentar,$file,$id_member,$tgl_post,$size);
 		redirect('dosen/reView');
 	}		

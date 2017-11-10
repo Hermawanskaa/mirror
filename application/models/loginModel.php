@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 public function mahasiswa(){
   echo $username = $this->security->xss_clean($this->input->post('username'));
   echo $password = $this->security->xss_clean($this->input->post('password'));
-
+  
   $this->db->where('id_member',$username);
   $this->db->where('pass',$password);
   $query = $this->db->get('mahasiswa');

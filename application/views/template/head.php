@@ -7,7 +7,7 @@
         <!-- Bootstrap 3.3.2 -->
         <link href="<?php echo base_url('assets/AdminLTE-2.4.2/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
         <!-- Font Awesome Icons -->
-        <link href="<?php echo base_url('assets/font-awesome-4.3.0/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets/font-awesome-4.7.0/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
         <link href="<?php echo base_url('assets/ionicons-2.0.1/css/ionicons.min.css') ?>" rel="stylesheet" type="text/css" />
         <!-- Theme style -->

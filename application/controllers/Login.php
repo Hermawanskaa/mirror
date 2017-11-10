@@ -19,7 +19,7 @@ public function logout(){
 
 public function m_login(){
 $result = $this->LoginModel->mahasiswa();
-if(! $result){
+if(!$result){
   $result = $this->LoginModel->dosen();
   if(!$result){
     $result = $this->LoginModel->kajur();

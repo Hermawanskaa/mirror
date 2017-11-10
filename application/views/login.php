@@ -7,11 +7,11 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="assets/AdminLTE-2.4.2/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/AdminLTE-2.4.2/plugins/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="assets/AdminLTE-2.4.2/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/AdminLTE-2.4.2/plugins/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="assets/AdminLTE-2.4.2/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/AdminLTE-2.4.2/plugins/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="assets/AdminLTE-2.4.2/dist/css/AdminLTE.min.css">
   <!-- iCheck -->
@@ -37,7 +37,7 @@
     <p class="login-box-msg">Sign in to start your session</p>
 
 <!--peringatan -->
-    <form action="<?php echo base_url('login/m_login'); ?>" method="post">
+    <form action="<?php echo base_url(); ?>" method="post">
         <?php
         if (validation_errors() || $this->session->flashdata('result_login')) {
       ?>
@@ -78,9 +78,9 @@
 <!-- /.login-box -->
 
 <!-- jQuery 3 -->
-<script src="assets/AdminLTE-2.4.2/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="assets/AdminLTE-2.4.2/plugins/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="assets/AdminLTE-2.4.2/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/AdminLTE-2.4.2/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- iCheck -->
 <script src="assets/AdminLTE-2.4.2/plugins/iCheck/icheck.min.js"></script>
 <script>

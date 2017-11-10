@@ -16,7 +16,7 @@ public function validation(){
 
 public function index(){
 	$this->validation();
-	$this->template->render('admin/home');
+	$this->load->view('admin/home');
 }
 
 public function list_mhs(){

@@ -9,7 +9,7 @@ parent::__construct();
 	public function get_all($table){
 	$this->db->from($table);
 	$query = $this->db->get();
-	$return $query->result();
+	return $query->result();
 }
 
 public function get_all_distinct($table,$Field){
