@@ -9,12 +9,12 @@ $this->load->view('admin/template/sidebar');
 <!-- Page Header -->
 <section class="content-header">
    <h1>
-      Dosen      <small>Edit Dosen</small>
+      Fakultas      <small>Edit Fakultas</small>
    </h1>
    <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class=""><a  href="">Dosen</a></li>
-      <li class="active">Edit Dosen</li>
+      <li class=""><a  href="">Fakultas</a></li>
+      <li class="active">Edit Fakultas</li>
    </ol>
 </section>
 
@@ -31,8 +31,8 @@ $this->load->view('admin/template/sidebar');
             <div class="col-sm-1">
         </div>
         </div>
-        <h3 class="widget-user-username">Dosen</h3>
-        <h5 class="widget-user-desc">Edit Dosen</h5>
+        <h3 class="widget-user-username">Fakultas</h3>
+        <h5 class="widget-user-desc">Edit Fakultas</h5>
         <hr>
   </div>
 </div>

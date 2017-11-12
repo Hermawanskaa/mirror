@@ -16,7 +16,7 @@ public function validation(){
 
 public function index(){
 	$this->validation();
-	$this->load->view('admin/dosen/dosen_list');
+	$this->load->view('admin/home');
 }
 
 public function list_mhs(){
@@ -87,7 +87,7 @@ public function lihat_judul(){
 
 public function save_download(){
 	$this->validation();
-	$config['Upload_path'] = '.assets/file/akademik';
+	$config['Upload_path'] = '.uploads/akademik';
 	$config['allowed_types'] = 'pdf|docx|doc|rar|xlsx|xls|jpeg|jpg|png|zip|pptx|ppt';
 	$this->load->library('Upload',$config);
 	if (!$this->Upload->do_Upload()){
@@ -147,7 +147,7 @@ public function profile(){
 //selesai
 public function do_Upload($gambar){
 	$config = array('allowed_types'=>'jpg|jpeg|png|gif',
-					'Upload_path'=>'./assets/foto/admin','max_size'=>30000);
+					'Upload_path'=>'./uploads/foto/admin','max_size'=>30000);
 	$this->load->library('Upload',$config);
 	$this->Upload->do_Upload($gambar);
 	$images = $this->Upload->data($gambar);
