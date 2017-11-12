@@ -10,12 +10,12 @@ $this->load->view('admin/template/sidebar');
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Dosen        <small>List All Dosen</small>
+        Fakultas        <small>List All Fakultas</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class=""><a  href="">Dosen</a></li>
-        <li class="active">List All Dosen</li>
+        <li class=""><a  href="">Fakultas</a></li>
+        <li class="active">List All Fakultas</li>
     </ol>
 </section>
 
@@ -28,7 +28,7 @@ $this->load->view('admin/template/sidebar');
                    <div class="row">
          <div class="widget-user-header">
             <div class="row col-md-4 pull-right">
-                        <a class="btn btn-primary" id="btn_add_new" href=""><i class="fa fa-plus-square-o" ></i> Add Dosen</a>
+                        <a class="btn btn-primary" id="btn_add_new" href=""><i class="fa fa-plus-square-o" ></i> Add Fakultas</a>
                         <a class="btn btn-primary" href=""><i class="fa fa-file-excel-o" ></i> Export XLS</a>
                         <a class="btn btn-primary" href=""><i class="fa fa-file-pdf-o" ></i> Export PDF</a>
                      </div>
@@ -37,8 +37,8 @@ $this->load->view('admin/template/sidebar');
             <div class="col-sm-1">
         </div>
         </div>
-        <h3 class="widget-user-username">Dosen</h3>
-        <h5 class="widget-user-desc">List All Dosen <i class="label bg-yellow">items</i></h5>
+        <h3 class="widget-user-username">Fakultas</h3>
+        <h5 class="widget-user-desc">List All Fakultas <i class="label bg-yellow">items</i></h5>
         <hr>
   </div>
 </div>
@@ -46,7 +46,7 @@ $this->load->view('admin/template/sidebar');
 
 <!-- Main Content -->
 <div class="boxbox-widget widget-user-2">
-                  <form name="form_dosen" id="form_dosen" action="">
+                  <form name="form_Fakultas" id="form_Fakultas" action="">
                   <div class="table-responsive"> 
                   <table class="table table-bordered table-striped dataTable">
                      <thead>
@@ -54,7 +54,7 @@ $this->load->view('admin/template/sidebar');
                            <th>
                             <input type="checkbox" class="flat-red toltip" id="check_all" name="check_all" title="check all">
                            </th>
-                           <th>NIP</th>
+                           <th>Id Member</th>
                            <th>Pass</th>
                            <th>Nama</th>
                            <th>Alamat</th>
@@ -63,7 +63,7 @@ $this->load->view('admin/template/sidebar');
                            <th>Action</th>
                         </tr>
                      </thead>
-                     <tbody id="tbody_dosen">
+                     <tbody id="tbody_Fakultas">
                         <tr>
                            <td width="5">
                               <input type="checkbox" class="flat-red check" name="id[]" value="">
@@ -83,7 +83,7 @@ $this->load->view('admin/template/sidebar');
                         </tr>
                          <tr>
                            <td colspan="100">
-                           Dosen data is not available
+                           Fakultas data is not available
                            </td>
                          </tr>
                      </tbody>

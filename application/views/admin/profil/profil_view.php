@@ -10,12 +10,12 @@ $this->load->view('admin/template/sidebar');
 <!-- Page Header -->
 <section class="content-header">
    <h1>
-      Dosen      <small>Detail Dosen</small>
+      Profil      <small>Detail Profil</small>
    </h1>
    <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class=""><a  href="">Dosen</a></li>
-      <li class="active">Detail Dosen</li>
+      <li class=""><a  href="">Profil</a></li>
+      <li class="active">Detail Profil</li>
    </ol>
 </section>
 
@@ -32,15 +32,15 @@ $this->load->view('admin/template/sidebar');
             <div class="col-sm-1">
         </div>
         </div>
-        <h3 class="widget-user-username">Dosen</h3>
-        <h5 class="widget-user-desc">Detail Dosen</h5>
+        <h3 class="widget-user-username">Profil</h3>
+        <h5 class="widget-user-desc">Detail Profil</h5>
         <hr>
   </div>
 </div>
 </div>
 
  <!-- Main Content -->              
-                  <div class="form-horizontal" name="form_dosen" id="form_dosen" >
+                  <div class="form-horizontal" name="form_Profil" id="form_Profil" >
                    
                     <div class="form-group ">
                         <label for="content" class="col-sm-2 control-label">NIP</label>
@@ -82,10 +82,10 @@ $this->load->view('admin/template/sidebar');
 <!-- Footer Content -->
                     <div class="box box-footer">
                             <button class="btn btn-primary" id="btn_save" data-stype='back'>
-                            <i class="ion ion-ios-list-outline" ></i> Edit Dosen
+                            <i class="ion ion-ios-list-outline" ></i> Edit Profil
                             </button>
                             <button class="btn btn-default col" id="btn_cancel">
-                            <i class="fa fa-undo"></i> Go Dosen List
+                            <i class="fa fa-undo"></i> Go Profil List
                             </button> 
                         </div>
                   </div>
