@@ -54,12 +54,9 @@ $this->load->view('admin/template/sidebar');
                            <th>
                             <input type="checkbox" class="flat-red toltip" id="check_all" name="check_all" title="check all">
                            </th>
-                           <th>Id Member</th>
-                           <th>Pass</th>
+                           <th>Id Jurusan</th>
                            <th>Nama</th>
-                           <th>Alamat</th>
-                           <th>No Hp</th>
-                           <th>Email</th>
+                           <th>Kode</th>
                            <th>Action</th>
                         </tr>
                      </thead>
@@ -69,8 +66,6 @@ $this->load->view('admin/template/sidebar');
                               <input type="checkbox" class="flat-red check" name="id[]" value="">
                            </td>
                            
-                           <td></td> 
-                           <td></td> 
                            <td></td> 
                            <td></td> 
                            <td></td> 

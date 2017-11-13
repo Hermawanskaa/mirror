@@ -43,36 +43,36 @@ $this->load->view('admin/template/sidebar');
                   <div class="form-horizontal" name="form_Profil" id="form_Profil" >
                    
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Id Member </label>
+                        <label for="content" class="col-sm-2 control-label">NIP</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
                                          
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Pass </label>
+                        <label for="content" class="col-sm-2 control-label">Pass</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
                                          
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Nama </label>
+                        <label for="content" class="col-sm-2 control-label">Nama</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
                                          
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Alamat </label>
+                        <label for="content" class="col-sm-2 control-label">Alamat</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
                                          
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">No Hp </label>
+                        <label for="content" class="col-sm-2 control-label">No Hp</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Email </label>
+                        <label for="content" class="col-sm-2 control-label">Email</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
