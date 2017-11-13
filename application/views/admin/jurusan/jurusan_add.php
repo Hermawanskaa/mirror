@@ -44,39 +44,21 @@ $this->load->view('admin/template/sidebar');
                     <form class="form-horizontal">
     <div class="box-body">
       <div class="form-group">
-        <label for="inputEmail3" class="col-sm-2 control-label">NIP</label>
+        <label for="inputEmail3" class="col-sm-2 control-label">ID Jurusan</label>
         <div class="col-sm-6">
-          <input type="input" class="form-control" id="id_member" placeholder="Id Member">
+          <input type="input" class="form-control" id="id_jurusan" placeholder="ID Jurusan">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <label for="inputPassword3" class="col-sm-2 control-label">Nama</label>
         <div class="col-sm-6">
-          <input type="password" class="form-control" id="password" placeholder="password">
+          <input type="input" class="form-control" id="password" placeholder="Nama Jurusan">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputEmail3" class="col-sm-2 control-label">Nama</label>
+        <label for="inputEmail3" class="col-sm-2 control-label">Kode</label>
         <div class="col-sm-6">
-          <input type="input" class="form-control" id="nama" placeholder="nama">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-2 control-label">Alamat</label>
-        <div class="col-sm-6">
-          <input type="alamat" class="form-control" id="alamat" placeholder="Alamat">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputEmail3" class="col-sm-2 control-label">No Hp</label>
-        <div class="col-sm-6">
-          <input type="no Hp" class="form-control" id="no_hp" placeholder="Nomor Hp">
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-6">
-          <input type="email" class="form-control" id="email" placeholder="Email">
+          <input type="input" class="form-control" id="kode" placeholder="Kode Jurusan">
         </div>
       </div>
     </div>

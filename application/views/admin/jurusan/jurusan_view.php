@@ -43,36 +43,19 @@ $this->load->view('admin/template/sidebar');
                   <div class="form-horizontal" name="form_Jurusan" id="form_Jurusan" >
                    
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Id Member </label>
+                        <label for="content" class="col-sm-2 control-label">Id Jurusan</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
                                          
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Pass </label>
+                        <label for="content" class="col-sm-2 control-label">Nama</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
                                          
                     <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Nama </label>
-                        <div class="col-sm-8">
-                        </div>
-                    </div>
-                                         
-                    <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Alamat </label>
-                        <div class="col-sm-8">
-                        </div>
-                    </div>
-                                         
-                    <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">No Hp </label>
-                        <div class="col-sm-8">
-                        </div>
-                    </div>
-                    <div class="form-group ">
-                        <label for="content" class="col-sm-2 control-label">Email </label>
+                        <label for="content" class="col-sm-2 control-label">Kode</label>
                         <div class="col-sm-8">
                         </div>
                     </div>
